@@ -1,6 +1,6 @@
 {% set name = "google-cloud-build" %}
-{% set version = "3.2.1" %}
-{% set sha256 = "22ff0f547a7dd9a5150d8a6578625f4e63318e1f0efaa29cf82f392bdd133172" %}
+{% set version = "3.3.0" %}
+{% set sha256 = "a90000d52bf1751d08f2639cc6ccc2030bb3c18dc3a01c02830567b6573a3562" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,7 @@ requirements:
     - pip >=18.1
   run:
     - python >=3.6
-    - google-api-core-grpc >=1.22.2,<2.0.0dev
+    - google-api-core-grpc >=1.26.0,<2.0.0dev
     - proto-plus >=0.4.0
     - packaging >=14.3
 
