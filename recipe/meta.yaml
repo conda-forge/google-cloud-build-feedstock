@@ -1,6 +1,6 @@
 {% set name = "google-cloud-build" %}
-{% set version = "3.5.1" %}
-{% set sha256 = "d209a7bde00e35c883229e6f8f4607aca7a4ae859cb2e7cd2a426ee767f09373" %}
+{% set version = "3.5.2" %}
+{% set sha256 = "3ce7b011bd83dc052ac564377744d648ca358c1441b18dc008db653a0613800a" %}
 
 package:
   name: {{ name|lower }}
