@@ -1,35 +1,37 @@
 {% set name = "google-cloud-build" %}
 {% set version = "3.8.2" %}
-{% set sha256 = "dfefcd36beb39d6131040df98b63d0e0b1e6c65af9882e3417165d986937a9d1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-build-{{ version }}.tar.gz
+  sha256: dfefcd36beb39d6131040df98b63d0e0b1e6c65af9882e3417165d986937a9d1
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.6
-    - pip >=18.1
+    - pip
   run:
     - python >=3.6
-    - google-api-core-grpc >=1.26.0,<3.0.0dev
-    - proto-plus >=0.4.0
-    - packaging >=14.3
+    - google-api-core-grpc >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
+    - proto-plus >=1.15.0
 
 test:
   imports:
     - grpc
     - google.cloud.devtools.cloudbuild
     - google.cloud.devtools.cloudbuild_v1
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/googleapis/python-cloudbuild
