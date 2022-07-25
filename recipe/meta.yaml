@@ -1,5 +1,5 @@
 {% set name = "google-cloud-build" %}
-{% set version = "3.8.3" %}
+{% set version = "3.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-build-{{ version }}.tar.gz
-  sha256: d9b6211f10137f497ad4505c37e233ae64d8f04bd500f607cc39561ac238af06
+  sha256: 8095a18843cc3dbd08b79c9c59a58a4b96bdee77b11679589fecc7e101f3f1b0
 
 build:
   number: 0
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
-    - google-api-core-grpc >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
+    - python >=3.7
+    - google-api-core-grpc >=1.32.0,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*
     - proto-plus >=1.15.0,<2.0.0dev
     - protobuf >=3.19.0,<4.0.0dev
 
