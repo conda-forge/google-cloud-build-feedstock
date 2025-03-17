@@ -1,5 +1,5 @@
 {% set name = "google-cloud-build" %}
-{% set version = "3.31.0" %}
+{% set version = "3.31.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 70ea9312e09a942d37aa34909b7a9748e390d05cf37af5ccf69c387725c5155d
+  sha256: dba52aa4771e2bd392bea929ae26ab54b1b6df793dc7d598b11acf93b65ebdd2
 
 build:
   noarch: python
