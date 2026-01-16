@@ -13,7 +13,7 @@ Development: https://github.com/googleapis/google-cloud-python/tree/main/package
 
 Documentation: https://googleapis.dev/python/cloudbuild/latest/index.html
 
-Google Cloud Build API is a Google Cloud service that lets client applications create and manage builds on Google Cloud Platform. Cloud Build lets you build software quickly across all languages. Get complete control over defining custom workflows for building, testing, and deploying across multiple environments such as VMs, serverless, Kubernetes, or Firebase.
+Google Cloud Build API is a Google Cloud service that lets client applications create and manage builds on Google Cloud Platform. Cloud Build lets you build software quickly across all languages. Get complete control over defining custom workflows for building, testing, and deploying across multiple environments:: - such as VMs, serverless, Kubernetes, or Firebase.
 See the [quick start guide](https://googleapis.dev/python/cloudbuild/latest/index.html#quick-start).
 
 Current build status
