@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-build
-  version: 3.34.0
+  version: "3.35.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_build-${{ version }}.tar.gz
-  sha256: 5928f6aa5e9029780bc6e87b9c364f0a61a1c576f4df5260dfeb8cfc3d89d4d5
+  sha256: 563561a124b2f49aefadb3b3dc509417917967d0dd930b0e47db4447aa040f7e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -53,7 +53,8 @@ about:
   summary: Google Cloud Build API client library
   license: Apache-2.0
   license_file: LICENSE
-  description: "Google Cloud Build API is a Google Cloud service that lets client applications create and manage builds on Google Cloud Platform. Cloud Build lets you build software quickly across all languages. Get complete control over defining custom workflows for building, testing, and deploying across multiple environments:: - such as VMs, serverless, Kubernetes, or Firebase.\nSee the [quick start guide](https://googleapis.dev/python/cloudbuild/latest/index.html#quick-start)."
+  description: "Google Cloud Build API is a Google Cloud service that lets client applications create and manage builds on Google Cloud Platform. Cloud Build lets you build software quickly across all languages. Get complete control over defining custom workflows for building, testing, and deploying across multiple environments::
+    - such as VMs, serverless, Kubernetes, or Firebase.\nSee the [quick start guide](https://googleapis.dev/python/cloudbuild/latest/index.html#quick-start)."
   homepage: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-build
   repository: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-build
   documentation: https://googleapis.dev/python/cloudbuild/latest/index.html
