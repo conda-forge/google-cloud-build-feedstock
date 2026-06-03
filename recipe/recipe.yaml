@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-build
-  version: "3.36.0"
+  version: "3.37.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_build-${{ version }}.tar.gz
-  sha256: f70de0882ffd0f48ff39b7fcb8b543c2eaeda06c2f067b8aa61125b9427d3ffc
+  sha256: 38a119fa1ab0461c930233ad6c98bc2534e375f033b52269e1a75ebe2e08cb98
 
 build:
   number: 0
