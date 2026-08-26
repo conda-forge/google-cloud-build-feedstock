@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-build
-  version: "3.38.1"
+  version: "3.39.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_cloud_build-${{ version }}.tar.gz
-  sha256: 88ddc96293e70d4eb28bfe593a90291142fef3fc5e23c134c233df299b3e1397
+  sha256: 4afe959637aad6ce39b49f4ef5b8c80932a9a3aeae9c32258938406369be1d45
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - google-api-core-grpc >=2.25.0,<3.0.0
     - google-auth >=2.14.1,<3.0.0,!=2.24.0,!=2.25.0
     - grpc-google-iam-v1 >=0.14.2,<1.0.0
-    # more restrictive constraint for python >=3.14
+    # tightest of upstream's floors (python >=3.14)
     - grpcio >=1.75.1,<2.0.0
     - proto-plus >=1.26.1,<2.0.0
     - protobuf >=6.33.5,<8.0.0
